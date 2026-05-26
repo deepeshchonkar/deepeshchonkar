@@ -1,4 +1,4 @@
-# 🎯 Sniper Trading Bot
+# 🎯 Claude Trading Bot
 
 Automated NSE stock scanner with multi-strategy signal generation, dynamic risk management,
 outcome tracking, backtesting, and rich HTML email reports. Runs free on GitHub Actions.
