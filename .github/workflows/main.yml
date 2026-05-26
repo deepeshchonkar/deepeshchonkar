@@ -11,7 +11,7 @@
 #   EMAIL_RECEIVER  — Address to receive reports
 # ──────────────────────────────────────────────────────────────────────────────
 
-name: Sniper Trading Bot
+name: Claude Trading Bot
 
 on:
   schedule:
