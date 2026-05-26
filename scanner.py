@@ -78,8 +78,7 @@ def run_scan(cfg: dict, dry_run: bool = False) -> tuple[Optional[list[dict]], st
     logger.info("Fetching India VIX...")
     vix = data.get_india_vix(cfg["market"]["vix_ticker"])
     risk_pct = risk.get_risk_pct(vix, cfg)
-    logger.info(f"VIX={vix or 'N/A':.1f if vix else 'N/A'}  →  Risk/trade={risk_pct*100:.2f}%")
-
+    logger.info(f"VIX={f'{vix:.1f}' if vix else 'N/A'}  →  Risk/trade={risk_pct*100:.2f}%")
     # ── 4. Market breadth ──────────────────────────────────────────────────────
     logger.info("Calculating market breadth...")
     breadth_pct = data.get_market_breadth(
